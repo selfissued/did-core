@@ -43,6 +43,8 @@
     // previousPublishDate:  "1977-03-15",
     // previousMaturity:  "WD",
 
+    pluralize: true,
+
     // extend the bibliography entries
     localBiblio: ccg.localBiblio,
     github: {
@@ -149,7 +151,7 @@ identity provider, or certificate authority. <a>DIDs</a> are URLs that relate
 a <a>DID subject</a> to means for trustable interactions with that subject by way
 of a <a>DID document</a>. <a>DID documents</a> are simple documents that describe how
 to use that specific <a>DID</a>. Each <a>DID document</a> may express cryptographic
-material, verification methods, and/or <a>service endpoints</a>. These provide
+material, <a>verification methods</a>, and/or <a>service endpoints</a>. These provide
 a set of mechanisms which enable a <a>DID controller</a> to prove control of the
 <a>DID</a>. <a>Service endpoints</a> enable trusted interactions with the <a>DID
 subject</a>.
@@ -579,8 +581,8 @@ DID Document
       </h2>
      <p>
 A <a>DID document</a> is the resource that is associated with a <a>decentralized
-identifier</a> (DID). The <a>DID document</a> typically expresses verification methods (such
-as public keys) and services that can be used to interact with a
+identifier</a> (DID). The <a>DID document</a> typically expresses <a>verification
+methods</a> (such as public keys) and services that can be used to interact with a
 <a>DID controller</a>.
       </p>
 
@@ -604,7 +606,7 @@ the applicable <a href="#did-methods"></a>.
 Cryptographic Keys and Other Verification Methods
       </h2>
       <p>
-A <a>DID document</a> can express cryptographic keys and other verification methods
+A <a>DID document</a> can express cryptographic keys and other <a>verification methods</a>
 that can be used to authenticate or authorize interactions with the <a>DID subject</a>
 or associated parties. The information expressed often includes globally
 unambiguous identifiers and public key material which can be used to verify
@@ -1428,9 +1430,9 @@ property. If so:
           <dt><dfn>authentication</dfn></dt>
           <dd>
 The value of the <code>authentication</code> property SHOULD be
-an array of verification methods. Each verification method MAY be embedded
-or referenced. An example of a verification method is a public key (see
-Section <a href="#public-keys"></a>).
+an array of <a>verification methods</a>. Each <a>verification method</a> MAY be
+embedded or referenced. An example of a <a>verification method</a> is a public key
+(see Section <a href="#public-keys"></a>).
           </dd>
       </dl>
 
